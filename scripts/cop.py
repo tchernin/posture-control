@@ -5,7 +5,7 @@ from geometry_msgs.msg import Twist
 from std_msgs.msg import Int64MultiArray, Float64MultiArray, Float64
 import numpy as np
 
-# T: Left out comments in next two lines
+
 POSITIONWEIGHT_X =  [-127.5,-127.5,-127.5, -67.5, -47.5, -47.5, 47.5, 47.5, 67.5, 127.5, 127.5, 127.5]
 POSITIONWEIGHT_Y = [-120,-120,-120,-120,-25,-25, 25, 25, 85, 85, 135, 135]
 SENSORS_PROJECTION_X = [0, 2, 4, 1, 3, 5, 6, 8, 10, 11, 7, 9]
@@ -197,12 +197,12 @@ class PressureSubscriber(Node):
         It also set a limit for the forward acceleration.
         """
         if (sum(self.pressure_values.data))> 100:
-        # ANGULAR VELOCITY
+         # ANGULAR VELOCITY
         	if (np.abs(COPx) > THRESHOLDX):
         		self.w = - KAPPA_W * (COPx - np.sign(COPx) * THRESHOLDX)
         		print("turning")
 
-            # LINEAR VELOCITY
+         # LINEAR VELOCITY
         	if COPy > THRESHOLDY:
         		self.vx = KAPPA_V * (COPy - THRESHOLDY)
         		print("Fw")
@@ -216,8 +216,7 @@ class PressureSubscriber(Node):
         	self.vx = self.vx + Dv
         	self.w = self.w + Dw
 
-            #check if the new velocity is below the acceleration limit
-
+         #check if the new velocity is below the acceleration limit
         	if (self.vx - self.v_prev) > THRESHOLD_ACC_LIN_FW:
         		self.vx = self.v_prev + THRESHOLD_ACC_LIN_FW
         		print("limiting the fw lin acc")
