@@ -1,0 +1,28 @@
+POSITIONWEIGHT_X: [
+    -127.5,
+    -127.5,
+    -127.5,
+    -67.5,
+    -47.5,
+    -47.5,
+    47.5,
+    47.5,
+    67.5,
+    127.5,
+    127.5,
+    127.5,
+]
+POSITIONWEIGHT_Y: [-120, -120, -120, -120, -25, -25, 25, 25, 85, 85, 135, 135]
+SENSORS_PROJECTION_X: [0, 2, 4, 1, 3, 5, 6, 8, 10, 11, 7, 9]
+SENSORS_PROJECTION_Y: [4, 5, 6, 7, 3, 8, 2, 9, 1, 10, 0, 11]
+
+THRESHOLDX: 0.4  # for the COP
+THRESHOLDY: 0.2  # for the COP
+KAPPA_W: 1  # for the ang velocity, proportional part
+KAPPA_V: 1  # for the lin velocity, proportional part
+KAPPA_W_D: 0.1  # for the ang velocity, differential part
+KAPPA_V_D: 0.1  # for the lin velocity, differential part
+THRESHOLD_ACC_LIN_FW: 0.05  # acceleration limit for the fw linear velocity
+MAX_LIN_VEL_MPS: 0.3
+MAX_ANG_VEL_RADPS: 0.5
+THRESHOLD_MIN_SUM_PRESSURE: 100  # minimum summed pressure to consider someone is sitting on it

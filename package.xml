@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>posture_control</name>
+  <version>0.1.0</version>
+  <description>A sample ROS 2 Python package</description>
+  <maintainer email="you@example.com">Your Name</maintainer>
+  <license>TODO</license>
+
+  <exec_depend>rclpy</exec_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
