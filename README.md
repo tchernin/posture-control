@@ -197,7 +197,11 @@ If he/she moves, the whole calibration procedure need to be repeated. In this ca
 Note that the published topic has the name: rostopic echo /pressuremat_cmd_vel_acc
 ## 6. ACKNOWLEGEMENT
 We would like to thank all the people at ETHZ that have supported this study, took part in the collection of data and in the qualitative assessment experiments.
+Further results and detailed analysis are available in the full thesis, accessible here:
 ```
 add here a link to the thesis
 ```
- 
+## 7. Demonstration Videos
+The implemented COP algorithm was also successfully tested and demonstrated with young and elderly individuals at Swiss Robotics Day 2023 and at the National Center for Geriatrics and Gerontology (NCGG) in Nagoya, Japan.
+Below are videos showing participants testing the implemented COP algorithm in real-world conditions.
+![](./videos/user3_movefw_brake_deface.gif)  | 
