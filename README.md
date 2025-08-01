@@ -204,4 +204,5 @@ add here a link to the thesis
 ## 7. Demonstration Videos
 The implemented COP algorithm was also successfully tested and demonstrated with young and elderly individuals at Swiss Robotics Day 2023 and at the National Center for Geriatrics and Gerontology (NCGG) in Nagoya, Japan.
 Below are videos showing participants testing the implemented COP algorithm in real-world conditions.
-![](./videos/user3_movefw_brake_deface.gif)  | 
+
+![](./videos/user3_movefw_brake_deface.gif)  
